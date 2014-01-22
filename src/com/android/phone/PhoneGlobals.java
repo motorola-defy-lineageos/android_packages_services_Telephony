@@ -34,6 +34,7 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.res.Configuration;
 import android.media.AudioManager;
+import android.media.AudioSystem;
 import android.net.Uri;
 import android.os.AsyncResult;
 import android.os.Binder;
@@ -925,6 +926,11 @@ public class PhoneGlobals extends ContextWrapper implements WiredHeadsetListener
     /* package */ void updatePhoneState(PhoneConstants.State state) {
         if (state != mLastPhoneState) {
             mLastPhoneState = state;
+
+            String voiceQualParam = PhoneUtils.PhoneSettings.getVoiceQualityParameter(this);
+            if (voiceQualParam != null) {
+                AudioSystem.setParameters(voiceQualParam);
+            }
 
             // Try to acquire or release UpdateLock.
             //

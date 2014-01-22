@@ -2800,5 +2800,32 @@ public class PhoneUtils {
         private static SharedPreferences getPrefs(Context context) {
             return PreferenceManager.getDefaultSharedPreferences(context);
         }
+
+        /* voice quality preferences */
+        static String getVoiceQualityParameter(Context context) {
+            String param = context.getResources().getString(R.string.voice_quality_param);
+            if (TextUtils.isEmpty(param)) {
+                return null;
+            }
+            String value = getVoiceQualityValue(context);
+            if (value == null) {
+                return null;
+            }
+            return param + "=" + value;
+        }
+        static String getVoiceQualityValue(Context context) {
+            String value = getPrefs(context).getString(
+                    CallFeaturesSetting.BUTTON_VOICE_QUALITY_KEY, null);
+            if (value != null) {
+                return value;
+            }
+            /* use first value of entry list */
+            String[] values = context.getResources().getStringArray(R.array.voice_quality_values);
+            if (values.length > 0) {
+                return values[0];
+            }
+            return null;
+        }
+
     }
 }
