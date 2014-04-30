@@ -111,13 +111,6 @@
   <string name="xdivert_active">Aktief</string>
   <string name="xdivert_not_active">Nie Aktief</string>
   <string name="xdivert_imsi_not_read">SIM Inisialisasie. Probeer asseblief na \'n tyd.</string>
-  <string name="managed_roaming_title">Bestuur dataswerwing</string>
-  <string name="managed_roaming_title_sub1">Bestuur dataswerwing (INS1)</string>
-  <string name="managed_roaming_title_sub2">Bestuur dataswerwing (INS2)</string>
-  <string name="managed_roaming_title_sub3">Bestuur dataswerwing (INS3)</string>
-  <string name="managed_roaming_dialog_content">Netwerk met beperkte Dienste gevind. Wil jy \'n netwerk soektog begin?</string>
-  <string name="managed_roaming_dialog_ok_button">Ja</string>
-  <string name="managed_roaming_dialog_cancel_button">Nee</string>
   <string name="no_volte">Kan nie IMS oproep maak nie</string>
   <string name="no_vt_allowed">Om \'n video-oproep te plaas, deaktiveer die TTY modus</string>
   <string name="ims_edit_title">IMS rekening besonderhede</string>
@@ -164,9 +157,6 @@
   <string name="call_number">Aan: </string>
   <string name="cancel_call">Kanselleer</string>
   <string name="set_subscription_error_atleast_one">Kies ten minste een inskrywing</string>
-  <string name="sub_1">INS 1</string>
-  <string name="sub_2">INS 2</string>
-  <string name="sub_3">INS 3</string>
   <string name="set_uicc_subscription_progress">Inskrywing aan die gang...</string>
   <string name="set_sub_success">Stel inskrywing sukses</string>
   <string name="set_sub_failed">Stel inskrywing het misluk</string>

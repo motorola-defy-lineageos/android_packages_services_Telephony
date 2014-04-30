@@ -1198,15 +1198,6 @@
     <!-- Title for the dialog used to display CDMA DisplayInfo -->
     <string name="network_message">Network message</string>
 
-    <!-- Shown in "Managed Roaming" dialog when registration is denied with rejCode 10. -->
-    <string name="managed_roaming_title">Managed roaming</string>
-    <string name="managed_roaming_title_sub1">Managed roaming (SUB 1)</string>
-    <string name="managed_roaming_title_sub2">Managed roaming (SUB 2)</string>
-    <string name="managed_roaming_title_sub3">Managed roaming (SUB 3)</string>
-    <string name="managed_roaming_dialog_content">Network with limited service found. Do you want to initiate a network search?</string>
-    <string name="managed_roaming_dialog_ok_button">Yes</string>
-    <string name="managed_roaming_dialog_cancel_button">No</string>
-
     <!-- OTA-specific strings -->
     <!-- Title shown on OTA screen -->
     <string name="ota_title_activate">Activate your phone</string>
@@ -1802,12 +1793,6 @@
 
     <!-- Set Subscription screen: Message shown in error dialog -->
     <string name="set_subscription_error_atleast_one">Select at least one subscription</string>
-    <!-- Set Subscription screen: label sub 1 -->
-    <string name="sub_1">SUB 1</string>
-    <!-- Set Subscription screen: label sub 2 -->
-    <string name="sub_2">SUB 2</string>
-    <!-- Set Subscription screen: label sub 3 -->
-    <string name="sub_3">SUB 3</string>
     <!-- Set Subscription screen: Progress message -->
     <string name="set_uicc_subscription_progress">Setting subscription\u2026</string>
     <!-- Set Subscription screen: Set subscriptio success -->
@@ -1820,7 +1805,6 @@
     <string name="set_sub_2">Subscription 2: </string>
     <!-- Set Subscription screen: Subscription 3 -->
     <string name="set_sub_3">Subscription 3: </string>
-    <!-- Set Subscription screen: Subscription activate success -->
     <!-- Set Subscription screen: Subscription activate success -->
     <string name="set_sub_activate_success">Activation successful</string>
     <!-- Set Subscription screen: Subscription deactivate success -->
