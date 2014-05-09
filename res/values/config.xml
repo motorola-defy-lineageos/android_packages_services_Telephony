@@ -161,4 +161,7 @@
          Leave empty to disable the feature. -->
     <string name="voice_quality_param"></string>
 
+    <!-- Use TD-SDCMA 3G/4G technologies on this device -->
+    <bool name="config_enabled_tdscdma" translatable="false">false</bool>
+
 </resources>

@@ -748,6 +748,17 @@
         <item>"2"</item>
     </string-array>
 
+    <!-- TD-SCDMA uses a variation of the GSM combos -->
+    <string-array name="enabled_networks_tdscdma_values" translatable="false">
+        <item>"20"</item>
+        <item>"18"</item>
+        <item>"1"</item>
+    </string-array>
+    <string-array name="enabled_networks_tdscdma_except_lte_values" translatable="false">
+        <item>"18"</item>
+        <item>"1"</item>
+    </string-array>
+
     <string name="cdma_subscription_title">CDMA subscription</string>
     <string name="cdma_subscription_summary">Change between RUIM/SIM and NV</string>
     <string name="cdma_subscription_dialogtitle">subscription</string>
@@ -1776,12 +1787,6 @@
     <string name="cursorError">Invalid cursor data</string>
     <!-- Set Subscription screen: set subscription option name -->
     <string name="set_subscription">Select subscription</string>
-    <!-- Set Subscription screen: label Card 1 -->
-    <string name="card_01">Card 1 / SUB 1</string>
-    <!-- Set Subscription screen: label Card 2 -->
-    <string name="card_02">Card 2 / SUB 2</string>
-    <!-- Set Subscription screen: label Card 3 -->
-    <string name="card_03">Card 3 / SUB 3</string>
 
     <!-- Set Subscription screen: Message shown in error dialog -->
     <string name="set_subscription_error_atleast_one">Select at least one subscription</string>
