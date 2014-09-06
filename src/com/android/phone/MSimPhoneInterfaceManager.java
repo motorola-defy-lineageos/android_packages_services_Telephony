@@ -354,6 +354,12 @@ public class MSimPhoneInterfaceManager extends ITelephonyMSim.Stub {
 
     private boolean showCallScreenInternal(boolean specifyInitialDialpadState,
                                            boolean showDialpad) {
+        if(MSimPhoneGlobals.getInstance().isCsvtActive()) {
+            Log.d(LOG_TAG, "showCallScreenInternal: csvt is active");
+            Intent mIntent = new Intent("restore_video_call");
+            mApp.sendBroadcast(mIntent);
+            return false;
+        }
         if (!PhoneGlobals.sVoiceCapable) {
             // Never allow the InCallScreen to appear on data-only devices.
             return false;
@@ -888,21 +894,21 @@ public class MSimPhoneInterfaceManager extends ITelephonyMSim.Stub {
      * Returns the network type
      */
     public int getNetworkType() {
-        return getDataNetworkType(getDefaultSubscription());
+        return getDataNetworkType(getPreferredDataSubscription());
     }
 
     /**
      * Returns the network type for a subscription
      */
     public int getNetworkType(int subscription) {
-        return getPhone(subscription).getServiceState().getDataNetworkType();
+        return getDataNetworkType(subscription);
     }
 
     /**
      * Returns the data network type
      */
     public int getDataNetworkType() {
-        return getDataNetworkType(getDefaultSubscription());
+        return getDataNetworkType(getPreferredDataSubscription());
     }
 
     /**
