@@ -1909,19 +1909,9 @@ public class CallFeaturesSetting extends PreferenceActivity
             updatePreferredTtyModeSummary(settingsTtyMode);
         }
 
-<<<<<<< HEAD
         if (mButtonVoiceQuality != null) {
             updateVoiceQualitySummary(mButtonVoiceQuality.getValue());
         }
-
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(
-                mPhone.getContext());
-        if (migrateVoicemailVibrationSettingsIfNeeded(prefs)) {
-            mVoicemailNotificationVibrate.setChecked(prefs.getBoolean(
-                    BUTTON_VOICEMAIL_NOTIFICATION_VIBRATE_KEY, false));
-        }
-=======
->>>>>>> cyanogen/cm-11.0
 
         if (mButtonProximity != null) {
             boolean checked = Settings.System.getInt(getContentResolver(),
