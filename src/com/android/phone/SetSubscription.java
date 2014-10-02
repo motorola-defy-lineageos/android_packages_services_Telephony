@@ -99,7 +99,7 @@ public class SetSubscription extends PreferenceActivity implements View.OnClickL
     public void onCreate(Bundle icicle) {
         boolean newCardNotify = getIntent().getBooleanExtra("NOTIFY_NEW_CARD_AVAILABLE", false);
         if (!newCardNotify) {
-            setTheme(android.R.style.Theme_Holo);
+            setTheme(R.style.Theme_Settings);
         }
         super.onCreate(icicle);
 
@@ -291,7 +291,7 @@ public class SetSubscription extends PreferenceActivity implements View.OnClickL
 
                 MSimTelephonyManager tm = MSimTelephonyManager.getDefault();
                 String operatorName = tm.getSimState(k) != SIM_STATE_ABSENT
-                    ? tm.getNetworkOperatorName(k) : getString(R.string.sub_no_sim);
+                    ? tm.getSimOperatorName(k) : getString(R.string.sub_no_sim);
                 String subGroupTitle = getString(R.string.multi_sim_entry_format,
                     operatorName, k + 1);
 
