@@ -2697,7 +2697,7 @@ public class CallFeaturesSetting extends PreferenceActivity
         } catch (NotFoundException ex) {
             ex.printStackTrace();
         } finally {
-            if (!recordingEnabled) {
+            if (!recordingEnabled && mCallRecordingFormat != null) {
                 preferenceScreen.removePreference(mCallRecordingFormat);
             }
         }
